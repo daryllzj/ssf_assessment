@@ -1,10 +1,12 @@
 package ssf.ssf_assessment.model;
 
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 public class Address {
 
     @NotNull(message="mandatory")
+    @Size (min=2, message="minimum 2 characters")
     private String name;
 
     @NotNull(message="mandatory")

@@ -124,9 +124,8 @@ public class PurchaseOrderController {
     @GetMapping(path="/shippingaddress")
     public String showView2( Model model) {
 
-        Address address = new Address();
 
-        model.addAttribute("address", address);
+        model.addAttribute("address", new Address());
 
         return "view2";
     }
